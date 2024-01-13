@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 430</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="./input.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500">
+    <main>
+        <div class="flex justify-center p-4">
+            <div class="flex w-2/3 min-h-80 bg-white rounded-md ">
+                <div class="relative pl-2 p-1">
+                    <div>
+                    <div>
+                        <h2 class="text-xl font-bold">My to-do list</h2>
+                        <p class="font-thin text-sm text-zinc-700">Double-click an item to make it complete</p>
+                    </div>
+                    <div>
+                        <input id="taskInput" class="border pl-1" type="text" placeholder="Task" required>
+                        <button id="addTaskBtn" class="bg-blue-700 pl-2 pr-2 rounded-lg text-white">Add</button>
+                    </div>
+                    <div class="p-8 list-disc">
+                        <ol id="taskList" class="list-decimal">
+                           
+                        </ol>
+                    </div>
+                     </div>
+                    <div class="flex absolute bottom-1 ">
+                        <button id="clearEmptyBtn" class="bg-blue-700 pl-2 pr-2 m-1 rounded-lg text-white">Clear Empty Items</button>
+                        <button id="clearListBtn" class="bg-red-700 m-1 pl-2 pr-2 rounded-lg text-white">Empty List</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+
+    <script src="./input.js"></script>
+</body>
+</html>
